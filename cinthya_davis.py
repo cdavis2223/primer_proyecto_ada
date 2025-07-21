@@ -13,6 +13,7 @@ while vidas > 0:
             mostrar += letra + " "
         else:
             mostrar += "_ "
+            
     print("Palabra:", mostrar.strip())
     print("Vidas:", vidas)
     print("Letras incorrectas:", letras_incorrectas)
