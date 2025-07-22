@@ -9,7 +9,7 @@ def repetir_juego():
     letras_incorrectas = []
 
     while vidas > 0:
-        print("\n" + "-"*30)
+        # print("\n" + "-"*30)
         mostrar = ""
         for letra in palabra:
             mostrar += letra + " " if letra in letras_adivinadas else "_ "
@@ -43,12 +43,14 @@ palabras = ["musica", "girasoles", "arquitectura", "atardecer", "futbol"]
 
 while True:
     repetir_juego()
-    print("\n¡Gracias por jugar!")
+    # repetir_juego()
+    # print("\n¡Gracias por jugar!")
     jugar_otra_vez = input("\n¿Quieres jugar otra vez? (s/n): ").lower()
-    if jugar_otra_vez in ['s', 'n']:
-        break
+    if jugar_otra_vez == 's':
+        print("\n¡Gracias por jugar!")
     else:
         print("¡Gracias por jugar! Hasta la próxima.")
+        break
     # print("Por favor, responde con 's' o 'n'.")
     # if jugar_otra_vez == 's':
     #     print("¡Genial! Reiniciando el juego...")
