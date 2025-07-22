@@ -14,6 +14,7 @@ while vidas > 0:
     print("Palabra:", mostrar.strip())
     print("Vidas:", vidas)
     print("Letras incorrectas:", ", ".join(letras_incorrectas))
+    
 
     if all(letra in letras_adivinadas for letra in palabra):
         print("\n ¡Ganaste! La palabra era:", palabra)
