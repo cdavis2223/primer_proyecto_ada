@@ -6,6 +6,7 @@ vidas = 6
 letras_adivinadas = []
 letras_incorrectas = []
 
+#no sync
 while vidas > 0:
     print("\n" + "-"*30)
     mostrar = ""
