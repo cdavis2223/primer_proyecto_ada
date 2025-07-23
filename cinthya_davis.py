@@ -17,9 +17,7 @@ def repetir_juego():
         print("Vidas:", vidas)
         print("Letras incorrectas:", ", ".join(letras_incorrectas)) 
 
-        if all(letra in letras_adivinadas for letra in palabra):
-            print("\n ¡Ganaste! La palabra era:", palabra)
-            break
+        
 
         intento = input("Ingresa una letra: ").lower()
         if len(intento) != 1 or not intento.isalpha():
@@ -35,6 +33,10 @@ def repetir_juego():
         else:
             letras_incorrectas.append(intento)
             vidas -= 1
+
+        if all(letra in letras_adivinadas for letra in palabra):
+            print("\n ¡Ganaste! La palabra era:", palabra)
+            break
 
     if vidas == 0:
         print("\n ¡Perdiste! La palabra era:", palabra)
